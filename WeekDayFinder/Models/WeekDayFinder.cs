@@ -17,7 +17,7 @@ namespace WeekDayFinder.Models
     }
 
     public string DateTime()
-    {
+    { 
       DateTime dt = new DateTime(_year, _month, _day);
       string actualDay = dt.DayOfWeek.ToString();
       return actualDay;

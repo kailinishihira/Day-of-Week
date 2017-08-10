@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+h1 {
+  font-size: 80px;
+  margin-top: 40px;
+  letter-spacing: 10px;
+}
+h3 {
+  margin-top: 25%;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+#month, #year, #day {
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+}
+.indexButton {
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+.slash {
+  font-size: 40px;
+}
+.dayShown {
+  margin-top: 25%;
+  margin-bottom: 30px;
+  letter-spacing: 8px;
+  font-size: 60px;
+}

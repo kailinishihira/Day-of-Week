@@ -14,12 +14,12 @@ namespace WeekDayFinder.Controllers
             return View();
         }
 
-        [HttpGet("/categories")]
-        public ActionResult Categories()
+        [HttpPost("/dayofweek")]
+        public ActionResult DayOfWeek()
         {
-            List<Category> allCategories = Category.GetAll();
-            return View(allCategories);
+          FindDay newDate = new FindDay((int.Parse(Request.Form["year"])), (int.Parse(Request.Form["month"])), (int.Parse(Request.Form["day"])));
+          string dayFound = newDate.DateTime();
+          return View("DayOfWeek", dayFound);
         }
-
     }
 }
